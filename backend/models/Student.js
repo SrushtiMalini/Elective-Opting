@@ -28,20 +28,23 @@ const studentSchema = new mongoose.Schema({
   },
   branch: {
     type: String,
-    enum: ['CSE', 'ISE', 'ECE', 'EEE', 'ME', 'CV', 'AI/ML', 'DS'],
-    default: null,
+    enum: {
+      values: ['CSE', 'ISE', 'ECE', 'EEE', 'ME', 'CV', 'AI/ML', 'DS'],
+      message: 'Invalid branch'
+    },
+    default: undefined,
   },
   semester: {
     type: Number,
     min: 1,
     max: 8,
-    default: null,
+    default: undefined,
   },
   cgpa: {
     type: Number,
     min: 0,
     max: 10,
-    default: null,
+    default: undefined,
   },
   backlog: {
     type: Boolean,
