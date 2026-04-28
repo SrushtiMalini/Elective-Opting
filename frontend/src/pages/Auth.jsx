@@ -49,7 +49,7 @@ export const Login = ({ onNavigate, onSuccess }) => {
 
         <p style={{ textAlign: 'center', marginTop: 20, fontSize: 14, color: 'var(--text2)' }}>
           No account?{' '}
-          <span style={{ color: 'var(--accent2)', cursor: 'pointer', fontWeight: 600 }}
+          <span style={{ color: 'var(--accent)', cursor: 'pointer', fontWeight: 600 }}
             onClick={() => onNavigate('register')}>
             Register here
           </span>
@@ -111,7 +111,7 @@ export const Register = ({ onNavigate }) => {
 
         <p style={{ textAlign: 'center', marginTop: 20, fontSize: 14, color: 'var(--text2)' }}>
           Already registered?{' '}
-          <span style={{ color: 'var(--accent2)', cursor: 'pointer', fontWeight: 600 }}
+          <span style={{ color: 'var(--accent)', cursor: 'pointer', fontWeight: 600 }}
             onClick={() => onNavigate('login')}>
             Sign in
           </span>
@@ -168,7 +168,7 @@ export const AdminLogin = ({ onNavigate, onSuccess }) => {
         <p style={{ textAlign: 'center', marginTop: 20, fontSize: 13, color: 'var(--text3)' }}>
           Default: admin@elective.com / admin123
           <br />
-          <span style={{ cursor: 'pointer', color: 'var(--accent2)', marginTop: 4, display: 'block' }}
+          <span style={{ cursor: 'pointer', color: 'var(--accent)', marginTop: 4, display: 'block' }}
             onClick={() => onNavigate('landing')}>← Back to home</span>
         </p>
       </div>

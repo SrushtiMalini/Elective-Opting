@@ -7,12 +7,12 @@ const Landing = ({ onNavigate }) => {
       <nav style={{
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
         padding: '20px 40px', borderBottom: '1px solid var(--border)',
-        position: 'sticky', top: 0, background: 'rgba(10,10,15,0.9)',
+        position: 'sticky', top: 0, background: 'rgba(255,255,255,0.9)',
         backdropFilter: 'blur(12px)', zIndex: 10,
       }}>
         <span style={{
           fontFamily: 'Syne', fontWeight: 800, fontSize: 22,
-          background: 'linear-gradient(135deg, #6c63ff, #38bdf8)',
+          background: 'linear-gradient(135deg, #6366f1, #818cf8)',
           WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
         }}>ElectiveHub</span>
         <div style={{ display: 'flex', gap: 12 }}>
@@ -25,9 +25,9 @@ const Landing = ({ onNavigate }) => {
       <div className="hero">
         <div style={{
           display: 'inline-flex', alignItems: 'center', gap: 8,
-          background: 'rgba(108,99,255,0.1)', border: '1px solid rgba(108,99,255,0.3)',
+          background: 'rgba(99,102,241,0.1)', border: '1px solid rgba(99,102,241,0.3)',
           borderRadius: 99, padding: '6px 16px', fontSize: 13,
-          color: 'var(--accent2)', marginBottom: 32, fontWeight: 600,
+          color: 'var(--accent)', marginBottom: 32, fontWeight: 600,
         }}>
           ✨ Fair. Transparent. Priority-Based.
         </div>
@@ -86,7 +86,7 @@ const Landing = ({ onNavigate }) => {
             { val: '3 Pref', label: 'Choices Per Student' },
           ].map((s) => (
             <div key={s.label}>
-              <div style={{ fontFamily: 'Syne', fontSize: 40, fontWeight: 800, color: 'var(--accent2)' }}>{s.val}</div>
+              <div style={{ fontFamily: 'Syne', fontSize: 40, fontWeight: 800, color: 'var(--accent)' }}>{s.val}</div>
               <div style={{ color: 'var(--text2)', marginTop: 4 }}>{s.label}</div>
             </div>
           ))}

@@ -63,7 +63,7 @@ const AdminStudents = () => {
                 <td style={{ color: 'var(--text3)' }}>{i + 1}</td>
                 <td style={{ fontWeight: 600 }}>{s.name}</td>
                 <td style={{ fontFamily: 'monospace', fontSize: 13 }}>{s.usn}</td>
-                <td><span className="badge" style={{ background: 'rgba(108,99,255,0.1)', color: 'var(--accent2)' }}>{s.branch || '—'}</span></td>
+                <td><span className="badge" style={{ background: 'rgba(99,102,241,0.1)', color: 'var(--accent)' }}>{s.branch || '—'}</span></td>
                 <td>{s.semester || '—'}</td>
                 <td style={{ fontWeight: 600 }}>{s.cgpa ?? '—'}</td>
                 <td>

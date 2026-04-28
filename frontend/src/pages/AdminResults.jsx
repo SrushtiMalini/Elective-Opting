@@ -143,7 +143,7 @@ const AdminResults = () => {
                   <td>{r.studentId?.backlog ? <span style={{ color: 'var(--red)' }}>Yes</span> : <span style={{ color: 'var(--green)' }}>No</span>}</td>
                   <td style={{ fontWeight: 500 }}>{r.assignedElective}</td>
                   <td style={{ textAlign: 'center' }}>
-                    {r.preferenceRank ? <span style={{ color: 'var(--accent2)', fontWeight: 600 }}>#{r.preferenceRank}</span> : '—'}
+                    {r.preferenceRank ? <span style={{ color: 'var(--accent)', fontWeight: 600 }}>#{r.preferenceRank}</span> : '—'}
                   </td>
                   <td><span className={`badge badge-${r.status?.toLowerCase()}`}>{r.status}</span></td>
                   <td>{r.waitlistPosition ? `#${r.waitlistPosition}` : '—'}</td>
